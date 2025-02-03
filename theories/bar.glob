@@ -1,0 +1,33 @@
+DIGEST c770f77fe61f143ef3777372f2c5cafc
+Fbar
+ind 10:12 <> day
+constr 30:35 <> monday
+constr 43:49 <> tuesday
+constr 57:65 <> wednesday
+constr 73:80 <> thursday
+constr 88:93 <> friday
+constr 101:108 <> saturday
+constr 116:121 <> sunday
+scheme 10:12 <> day_rect
+scheme 10:12 <> day_ind
+scheme 10:12 <> day_rec
+scheme 10:12 <> day_sind
+def 136:151 <> next_working_day
+R156:158 bar <> day ind
+binder 154:154 <> d:3
+R163:165 bar <> day ind
+R180:180 bar <> d:3 var
+R193:198 bar <> monday constr
+R203:209 bar <> tuesday constr
+R217:223 bar <> tuesday constr
+R228:236 bar <> wednesday constr
+R244:252 bar <> wednesday constr
+R257:264 bar <> thursday constr
+R272:279 bar <> thursday constr
+R284:289 bar <> friday constr
+R297:302 bar <> friday constr
+R307:312 bar <> monday constr
+R320:327 bar <> saturday constr
+R332:337 bar <> monday constr
+R345:350 bar <> sunday constr
+R355:360 bar <> monday constr
