@@ -1,6 +1,1 @@
--Q theories ECIQ
--arg -w -arg -notation-overridden
-
-theories/Module1.v
-theories/Module2.v
-theories/Module42.v
+-Q theories NEW_ECCIC256
