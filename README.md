@@ -32,9 +32,9 @@ To interact with the elliptic curve defined in this system, you can use the `Mak
    - This will compile all the necessary `.v` files in the `theories` directory and generate `.vo` files.
 
 4. **Interacting with the Curve**:
-   - After running the `make` command, the Coq code will be compiled and ready for interaction. You can now run the Coq environment using `coqtop` and load your files as follows:
+   - After running the `make` command, the Coq code will be compiled and ready for interaction. You can now run the Coq environment using `coqtop` and load the curve as follows (NOTE: ECC.v should be stored in your theories folder if not already):
      ```bash
-     coqtop
+     coqtop -Q theories ECCIC256
      ```
      Once inside the Coq environment, load the necessary libraries and your elliptic curve file:
      ```coq
@@ -47,18 +47,17 @@ To interact with the elliptic curve defined in this system, you can use the `Mak
 
      Open Scope Z_scope.
 
-     (* Define a prime modulus p and other necessary parameters *)
+    (* prime modulus p *)
      Parameter p : Z.
      Axiom p_prime : prime p.
 
-     (* Load and interact with elliptic curve definitions *)
+     (* load the curve *)
      Require Import ECCIC256.ECC.
      ```
 
 5. **Verifying Properties**:
    - You can now interact with the elliptic curve, perform operations, and verify key properties essential for the ECDSA security assumptions. For example:
      ```coq
-     (* Example usage *)
      Eval compute in point_add (Point 2 3) (Point 5 6).
      Eval compute in scalar_mult 5 (Point 2 3).
      ```
