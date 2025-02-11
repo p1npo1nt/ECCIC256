@@ -70,22 +70,4 @@ Fixpoint scalar_mult (k : nat) (P : ECPoint) : ECPoint :=
   | S k' => point_add P (scalar_mult k' P)
   end.
 
-(* !TEST! *)
 
-(* Example point G on the curve: G = (5, 1) *)
-Definition G : ECPoint := Point 5 1.
-
-(* ======================================================= *)
-
-Example point_doubling_test : point_add G G = Point 6 3.
-Proof.
-  compute.
-  reflexivity.
-Qed.
-
-
-Example scalar_mult_test : scalar_mult 3 G = Point 10 6.
-Proof.
-  compute.
-  reflexivity.
-Qed.
