@@ -18,7 +18,7 @@ Assistant. Interactive Theorem Proving, Jul 2014, Vienna, Austria. pp.77-92, ff1
 
 To interact with the elliptic curve defined in this system, you will need to run the Coq file that defines the elliptic curve and its operations. Follow the steps below to execute the file:
 
-1. **Install Coq**: Ensure you have Coq installed. You can download it from [Coq's official website](https://coq.inria.fr/).
+1. [**Install Coq**]((https://coq.inria.fr/)).
 
 2. **Set up the Coq Environment**:
    - To run the Coq file, you will use `coqtop` (Coq's interactive shell) or `make` commands.
