@@ -1,4 +1,4 @@
-# Formal Verification of Elliptic Curve Cryptography Security Assumptions in Coq
+# Formal Verification of Elliptic Curve Cryptography Security Assumptions in Coq (Elliptic Curve Cryptography with the Calculus of Inductive Constructions)
 
 ## Abstract
 
